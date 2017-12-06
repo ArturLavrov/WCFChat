@@ -9,6 +9,7 @@ using MVVMCommon;
 
 namespace ChatUI
 {
+    //TODO:improve ChatViewModel.
     public class ChatViewModel:ViewModelBase
     {
         private string _messagecontent;
