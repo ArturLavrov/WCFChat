@@ -62,7 +62,7 @@ namespace ChatCommunication
                 _channel.DisplayMessage(new SendEntity(_myUserName, encodingmessage));
             }
         }
-        
+        //TODO:improve StartService method.
         private void StartService()
         {
             host = new ServiceHost(this);
@@ -76,7 +76,7 @@ namespace ChatCommunication
             //// Information to display locally
             //_displayMessageDelegate(new SendEntity("Info", "To change your name, type setname: NEW_NAME"));
         }
-        
+        //TODO:implement graceful shutdown in StopService method.
         private void StopService()
         {
             if (host != null)
