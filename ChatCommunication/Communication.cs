@@ -46,7 +46,7 @@ namespace ChatCommunication
         private ChannelFactory<ICommunication> channelFactory;
         private ICommunication _channel;
 
-        //TODO:refactor SendMessage method.
+        
         public void SendMessage(string text)
         {
             if (text.StartsWith("setname:", StringComparison.OrdinalIgnoreCase))
@@ -62,7 +62,7 @@ namespace ChatCommunication
                 _channel.DisplayMessage(new SendEntity(_myUserName, encodingmessage));
             }
         }
-        //TODO:refactor StartService method.
+        
         private void StartService()
         {
             host = new ServiceHost(this);
@@ -76,7 +76,7 @@ namespace ChatCommunication
             //// Information to display locally
             //_displayMessageDelegate(new SendEntity("Info", "To change your name, type setname: NEW_NAME"));
         }
-        //TODO:Change signature in StopService Method.
+        
         private void StopService()
         {
             if (host != null)
