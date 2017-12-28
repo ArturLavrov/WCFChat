@@ -9,7 +9,7 @@ using MVVMCommon;
 
 namespace ChatUI
 {
-    //TODO:change ChatViewModel.
+    
     public class ChatViewModel:ViewModelBase
     {
         private string _messagecontent;
@@ -37,6 +37,7 @@ namespace ChatUI
         {
             _backend = new Communication(DisplayMessage);
         }
+        //TODO:rewrite DisplayMessage method. 
         private void DisplayMessage(SendEntity composite)
         {
             string username = composite.Username ?? "";
