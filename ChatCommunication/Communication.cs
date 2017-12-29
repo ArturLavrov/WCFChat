@@ -46,7 +46,7 @@ namespace ChatCommunication
         private ChannelFactory<ICommunication> channelFactory;
         private ICommunication _channel;
 
-        
+        //TODO:rewrite SendMessage Method
         public void SendMessage(string text)
         {
             if (text.StartsWith("setname:", StringComparison.OrdinalIgnoreCase))
