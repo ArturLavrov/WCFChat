@@ -46,7 +46,7 @@ namespace ChatCommunication
         private ChannelFactory<ICommunication> channelFactory;
         private ICommunication _channel;
 
-        //TODO:change SendMessage method.
+        
         public void SendMessage(string text)
         {
             if (text.StartsWith("setname:", StringComparison.OrdinalIgnoreCase))
@@ -79,6 +79,7 @@ namespace ChatCommunication
         //TODO:implement graceful shutdown in StopService method.
         private void StopService()
         {
+            //TODO:remove host check.
             if (host != null)
             {
                 _channel.DisplayMessage(new SendEntity("Event", _myUserName + " is leaving the conversation."));
