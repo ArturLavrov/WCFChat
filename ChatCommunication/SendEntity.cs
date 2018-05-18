@@ -2,6 +2,7 @@
 
 namespace ChatCommunication
 {
+    //TODO:Test integration with TaskManager 
     [DataContract]
     public class SendEntity
     {
