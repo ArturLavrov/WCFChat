@@ -2,6 +2,7 @@
 
 namespace ChatCommunication
 {
+    //TODO:extend communication interface
     [ServiceContract]
     public interface ICommunication
     {
