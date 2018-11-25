@@ -11,6 +11,8 @@ namespace ChatUI
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
+    
+    //TODO:comment about UI
     public partial class App : Application
     {
     }
